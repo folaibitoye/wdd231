@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Home page for WDD231 project">
+    <meta name="author" content="Your Name" />
+    <title>Home | WDD231</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo2.webp" alt="Site Logo" />
+        <span>Folahan Peter Ibitoye</span>
+        <button id="menu">&#9776;</button>
+    </header>
+
+    <nav id="navMenu">
+        <a href="index.html" class="active">Home</a>
+        <a href="chamber.html">Chamber Project</a>
+        <a href="final.html">Final Project</a>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+        <section>
+            <h2>About Me</h2>
+            <p>My name is Folahan Peter Ibitoye and I go by Fola. I was born in Nigeria and live with my family in Nigeria.
+            I am studying Bachelor of Science Degree in Software Development at BYU, Idaho. I am currently working as an Mentor
+            Serving BYU Pathway Worldwide. I am married with two kids. I love adventure and discovery of new ideas.My main goal is
+            to develop myself into a software Engineer, I know the journey might be challenging, but I just have to start from
+            somewhere</p>
+        </section>
+
+        <section>
+            <h2>Student Photo</h2>
+            <img src="images/profile.webp" alt="Student Photo" width="150" />
+        </section>
+
+        <section>
+            <h2>Web Certificate Courses</h2>
+            <div class="filter-buttons">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div id="courses"></div>
+            <p id="totalCredits">Total credits: 0</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/folaibitoye" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/folaibitoye" target="_blank">LinkedIn</a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> | Folahan Peter Ibitoye | Osun State, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

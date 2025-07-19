@@ -1,0 +1,43 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+nav,
+main,
+footer {
+    padding: 1rem;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+}
+
+nav a {
+    margin: 0.5rem 0;
+}
+
+#menu {
+    display: block;
+}
+
+/* Course Cards */
+#courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.course-card {
+    border: 1px solid #333;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.completed {
+    background-color: #d4edda;
+    border-color: #155724;
+}

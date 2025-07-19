@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Timbuktu Chamber of Commerce - Business and community resource for local growth.">
+    <meta name="author" content="Folahan Peter Ibitoye">
+
+    <!-- Facebook Open Graph -->
+    <meta property="og:title" content="Timbuktu Chamber of Commerce" />
+    <meta property="og:description" content="Discover and connect with local businesses in Timbuktu.">
+    <meta property="og:image" content="https://yourusername.github.io/wdd231/chamber/images/hero.jpg">
+    <meta property="og:url" content="https://yourusername.github.io/wdd231/chamber/index.html">
+
+    <title>Home | Timbuktu Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css" />
+    <script defer src="scripts/header-toggle.js"></script>
+    <script defer src="scripts/footer-info.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Timbuktu Chamber of Commerce Logo" />
+        <h1>Timbuktu Chamber of Commerce</h1>
+        <button id="menu">&#9776;</button>
+    </header>
+
+    <nav id="navMenu">
+        <a href="index.html" class="active">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+        <a href="discover.html">Discover</a>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-small.jpg" media="(max-width: 600px)" />
+                <img src="images/hero-large.jpg" alt="Chamber Hero Image" />
+            </picture>
+            <a class="cta-button" href="join.html">Keynote Tickets</a>
+        </section>
+
+        <h2>Home</h2>
+
+        <section class="highlights">
+            <div class="event-box">
+                <h3>Events</h3>
+                <p>Check back soon for upcoming chamber events!</p>
+            </div>
+            <div class="weather-box">
+                <h3>Current Weather</h3>
+                <p>🌤️ 75°F<br>Partly Cloudy<br>Humidity: 34%<br>Sunrise: 7:30am<br>Sunset: 9:59pm</p>
+            </div>
+            <div class="forecast-box">
+                <h3>Weather Forecast</h3>
+                <p>Today: <strong>90°F</strong><br>Wednesday: <strong>89°F</strong><br>Thursday: <strong>68°F</strong>
+                </p>
+            </div>
+        </section>
+
+        <section class="business-spotlights">
+            <article class="business-card">
+                <h4>Business Name</h4>
+                <p class="tagline">Business Tag Line</p>
+                <p><strong>Email:</strong> info@gmail.com</p>
+                <p><strong>Phone:</strong> 800-555-1234</p>
+                <p><strong>URL:</strong> mybusiness.com</p>
+                <img src="images/business1.jpg" alt="Business 1" />
+            </article>
+            <article class="business-card">
+                <h4>Business Name</h4>
+                <p class="tagline">Business Tag Line</p>
+                <p><strong>Email:</strong> info@gmail.com</p>
+                <p><strong>Phone:</strong> 800-555-1234</p>
+                <p><strong>URL:</strong> mybusiness.com</p>
+                <img src="images/business2.jpg" alt="Business 2" />
+            </article>
+            <article class="business-card">
+                <h4>Business Name</h4>
+                <p class="tagline">Business Tag Line</p>
+                <p><strong>Email:</strong> info@gmail.com</p>
+                <p><strong>Phone:</strong> 800-555-1234</p>
+                <p><strong>URL:</strong> mybusiness.com</p>
+                <img src="images/business3.jpg" alt="Business 3" />
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p><strong>Timbuktu Chamber of Commerce</strong></p>
+            <p>10 Rue De La Paix<br>Timbuktu, Mali 999</p>
+            <p>Email: <a href="mailto:info@timbuktucc.org">info@timbuktucc.org</a></p>
+            <p>Phone: (223) 555-2300</p>
+        </div>
+
+        <div class="social-links">
+            <a href="#"><img src="images/icon-youtube.svg" alt="YouTube" /></a>
+            <a href="#"><img src="images/icon-twitter.svg" alt="Twitter" /></a>
+            <a href="#"><img src="images/icon-linkedin.svg" alt="LinkedIn" /></a>
+        </div>
+
+        <div class="site-meta">
+            <p>WDD231 Class Project<br>Marie Martinez</p>
+            <p>&copy; <span id="currentyear"></span> Timbuktu Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
