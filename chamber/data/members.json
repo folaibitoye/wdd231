@@ -1,0 +1,29 @@
+{
+    "members": [
+        {
+            "name": "Alpha Tech",
+            "address": "123 Tech Lane",
+            "phone": "555-1234",
+            "website": "https://alphatech.com",
+            "image": "alpha.png",
+            "membership": 3
+        },
+        {
+            "name": "Beta Bakery",
+            "address": "456 Dough St.",
+            "phone": "555-5678",
+            "website": "https://betabakery.com",
+            "image": "beta.png",
+            "membership": 1
+        },
+        {
+            "name": "Gamma Gym",
+            "address": "789 Flex Ave.",
+            "phone": "555-9012",
+            "website": "https://gammagym.com",
+            "image": "gamma.png",
+            "membership": 2
+        }
+        // ... add 4+ more
+    ]
+}
