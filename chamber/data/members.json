@@ -1,29 +1,18 @@
-{
-    "members": [
-        {
-            "name": "Alpha Tech",
-            "address": "123 Tech Lane",
-            "phone": "555-1234",
-            "website": "https://alphatech.com",
-            "image": "alpha.png",
-            "membership": 3
-        },
-        {
-            "name": "Beta Bakery",
-            "address": "456 Dough St.",
-            "phone": "555-5678",
-            "website": "https://betabakery.com",
-            "image": "beta.png",
-            "membership": 1
-        },
-        {
-            "name": "Gamma Gym",
-            "address": "789 Flex Ave.",
-            "phone": "555-9012",
-            "website": "https://gammagym.com",
-            "image": "gamma.png",
-            "membership": 2
-        }
-        // ... add 4+ more
-    ]
-}
+[
+    {
+        "name": "SaharaTech",
+        "membership": "gold",
+        "logo": "images/logo1.png",
+        "phone": "123-456-7890",
+        "address": "123 Camel Rd, Timbuktu",
+        "website": "https://saharatech.com"
+    },
+    {
+        "name": "Desert Foods",
+        "membership": "silver",
+        "logo": "images/logo2.png",
+        "phone": "456-789-0123",
+        "address": "456 Oasis Ln, Timbuktu",
+        "website": "https://desertfoods.com"
+    }
+]

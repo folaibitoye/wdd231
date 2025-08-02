@@ -1,0 +1,104 @@
+@media screen and (min-width: 768px) {
+
+    /* Header and Navigation */
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    #menu {
+        display: none;
+        /* Hide hamburger menu on larger screens */
+    }
+
+    /* Hero Section */
+    .hero {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hero img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        max-height: 450px;
+    }
+
+    .hero .cta {
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
+        background-color: var(--primary-color);
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        font-size: 1.25rem;
+    }
+
+    .hero .cta .button {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    /* Events, Weather, and Spotlights */
+    main {
+        padding: 2rem;
+    }
+
+    .events,
+    .weather,
+    .spotlights {
+        margin-bottom: 2rem;
+        padding: 1rem 2rem;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .events ul,
+    #forecast-list {
+        list-style: disc;
+        margin-left: 2rem;
+    }
+
+    .spotlights .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+    .spotlights .card {
+        background-color: var(--secondary-color);
+        padding: 1rem;
+        border-radius: 10px;
+        text-align: center;
+        color: var(--text-color);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .spotlights .card img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 1.5rem 2rem;
+        font-size: 1rem;
+    }
+}
