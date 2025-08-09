@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join - Springfield Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <style>
+        /* Base Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #fdfdfd;
+        }
+
+        header,
+        footer {
+            background: #023e8a;
+            color: white;
+            padding: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+
+        nav a.active {
+            border-bottom: 2px solid yellow;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        /* Form Styling */
+        form {
+            flex: 1;
+            min-width: 280px;
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 0.5rem;
+            margin-top: 0.25rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button[type="submit"] {
+            background: #0077b6;
+            color: white;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button[type="submit"]:hover {
+            background: #0096c7;
+        }
+
+        /* Membership Cards */
+        .cards {
+            flex: 1;
+            min-width: 260px;
+            display: grid;
+            gap: 1rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation: fadeInUp 0.8s ease both;
+        }
+
+        .card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .card:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+
+        .card:nth-child(3) {
+            animation-delay: 0.5s;
+        }
+
+        .card:nth-child(4) {
+            animation-delay: 0.7s;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .card a {
+            color: #0077b6;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            background: white;
+            padding: 1rem;
+            margin: 10% auto;
+            width: 90%;
+            max-width: 500px;
+            border-radius: 8px;
+        }
+
+        .close {
+            float: right;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Springfield Chamber of Commerce</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" class="active">Join</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Join Form -->
+        <form action="thankyou.html" method="get">
+            <label>
+                First Name:
+                <input type="text" name="firstName" title="Enter your first name" autocomplete="given-name" required>
+            </label>
+            <label>
+                Last Name:
+                <input type="text" name="lastName" title="Enter your last name" autocomplete="family-name" required>
+            </label>
+            <label>
+                Organizational Title:
+                <input type="text" name="orgTitle" title="Enter your title in your organization"
+                    autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+            </label>
+            <label>
+                Email Address:
+                <input type="email" name="email" title="Enter your email" autocomplete="email"
+                    placeholder="example@email.com" required>
+            </label>
+            <label>
+                Mobile Phone:
+                <input type="tel" name="phone" title="Enter your mobile number" autocomplete="tel" required>
+            </label>
+            <label>
+                Business/Organization Name:
+                <input type="text" name="organization" title="Enter your business or organization name"
+                    autocomplete="organization" required>
+            </label>
+            <label>
+                Membership Level:
+                <select name="membership" title="Select your membership level" required>
+                    <option value="">Select a level...</option>
+                    <option value="NP">NP Membership (Free)</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+            </label>
+            <label>
+                Business/Organization Description:
+                <textarea name="description" title="Describe your business or organization"></textarea>
+            </label>
+            <input type="hidden" name="timestamp" id="timestamp">
+            <button type="submit">Join Now</button>
+        </form>
+
+        <!-- Membership Cards -->
+        <div class="cards">
+            <div class="card">
+                <h3>NP Membership</h3>
+                <p>Free for non-profit organizations.</p>
+                <a onclick="openModal('modalNP')">View Benefits</a>
+            </div>
+            <div class="card">
+                <h3>Bronze Membership</h3>
+                <p>Basic perks for small businesses.</p>
+                <a onclick="openModal('modalBronze')">View Benefits</a>
+            </div>
+            <div class="card">
+                <h3>Silver Membership</h3>
+                <p>Extra perks and training.</p>
+                <a onclick="openModal('modalSilver')">View Benefits</a>
+            </div>
+            <div class="card">
+                <h3>Gold Membership</h3>
+                <p>Maximum benefits and exposure.</p>
+                <a onclick="openModal('modalGold')">View Benefits</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modals -->
+    <div id="modalNP" class="modal">
+        <div class="modal-content"><span class="close" onclick="closeModal('modalNP')">&times;</span>
+            <h3>NP Membership Benefits</h3>
+            <ul>
+                <li>No membership fee</li>
+                <li>Access to networking events</li>
+            </ul>
+        </div>
+    </div>
+    <div id="modalBronze" class="modal">
+        <div class="modal-content"><span class="close" onclick="closeModal('modalBronze')">&times;</span>
+            <h3>Bronze Membership Benefits</h3>
+            <ul>
+                <li>Directory listing</li>
+                <li>Discounted events</li>
+            </ul>
+        </div>
+    </div>
+    <div id="modalSilver" class="modal">
+        <div class="modal-content"><span class="close" onclick="closeModal('modalSilver')">&times;</span>
+            <h3>Silver Membership Benefits</h3>
+            <ul>
+                <li>Training opportunities</li>
+                <li>Advertising options</li>
+            </ul>
+        </div>
+    </div>
+    <div id="modalGold" class="modal">
+        <div class="modal-content"><span class="close" onclick="closeModal('modalGold')">&times;</span>
+            <h3>Gold Membership Benefits</h3>
+            <ul>
+                <li>All Silver perks</li>
+                <li>Sponsorship opportunities</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Springfield Chamber of Commerce</p>
+    </footer>
+
+    <script>
+        document.getElementById("timestamp").value = new Date().toISOString();
+        function openModal(id) { document.getElementById(id).style.display = 'block'; }
+        function closeModal(id) { document.getElementById(id).style.display = 'none'; }
+    </script>
+
+</body>
+
+</html>
