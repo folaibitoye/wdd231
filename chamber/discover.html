@@ -4,62 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discover Our Town - Chamber of Commerce</title>
+    <title>Chamber Discover</title>
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script defer src="scripts/discover.js"></script>
 </head>
 
 <body>
+
+    <!-- Header / Navigation -->
     <header>
-        <div class="logo">
-            <img src="images/logo.png" alt="Chamber Logo">
-            <h1>Our Town Chamber</h1>
-        </div>
+        <h1>Chamber Discover</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="discover.html" class="active">Discover</a>
-            <a href="directory.html">Directory</a>
-            <a href="join.html">Join</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html" aria-current="page">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
         </nav>
     </header>
 
+    <!-- Main content with sidebar for visitor messages -->
     <main>
-        <section class="hero">
-            <h2>Discover the Heart of Our Community</h2>
-            <p>Explore history, culture, and opportunities in our town.</p>
-        </section>
-
-        <section class="history">
-            <h3>Our History</h3>
-            <p>Founded in 1890, our town has been a hub for agriculture, trade, and culture for over a century. The
-                downtown district still reflects its original architecture and charm.</p>
-        </section>
-
+        <aside id="visitMessage"></aside>
         <section class="gallery">
-            <h3>Photo Gallery</h3>
-            <div class="gallery-grid">
-                <img src="images/gallery1.jpg" alt="Historic building">
-                <img src="images/gallery2.jpg" alt="Local park">
-                <img src="images/gallery3.jpg" alt="Community event">
-                <img src="images/gallery4.jpg" alt="Farmers market">
-            </div>
-        </section>
-
-        <section class="stats">
-            <h3>Did You Know?</h3>
-            <ul>
-                <li>Population: 45,000</li>
-                <li>Average Temperature: 72°F</li>
-                <li>Over 150 local businesses</li>
-            </ul>
+            <div id="cardGrid" class="cards"></div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; <span id="year"></span> Our Town Chamber of Commerce</p>
+        <p>&copy; <span id="year"></span> Chamber of Commerce</p>
     </footer>
 
-    <script src="scripts/main.js"></script>
 </body>
 
 </html>

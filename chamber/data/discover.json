@@ -1,0 +1,50 @@
+[
+    {
+        "name": "City Museum",
+        "address": "123 Main St",
+        "description": "Explore art, history, and culture at the city museum.",
+        "image": "images/gallery1.jpg"
+    },
+    {
+        "name": "Town Park",
+        "address": "456 Oak Ave",
+        "description": "Open green spaces with walking trails and playgrounds.",
+        "image": "images/gallery2.jpg"
+    },
+    {
+        "name": "Historic Theater",
+        "address": "789 Elm St",
+        "description": "Enjoy performances and concerts in a restored historic venue.",
+        "image": "images/gallery3.jpg"
+    },
+    {
+        "name": "City Library",
+        "address": "101 Pine Rd",
+        "description": "A modern library with reading rooms and community events.",
+        "image": "images/gallery4.jpg"
+    },
+    {
+        "name": "Aquatic Center",
+        "address": "202 River Dr",
+        "description": "Indoor and outdoor pools, fitness classes, and water sports.",
+        "image": "images/gallery1.jpg"
+    },
+    {
+        "name": "Botanical Gardens",
+        "address": "303 Garden Ln",
+        "description": "Beautiful landscaped gardens and walking paths.",
+        "image": "images/gallery2.jpg"
+    },
+    {
+        "name": "Local Brewery",
+        "address": "404 Brewery Blvd",
+        "description": "Tasting room and tours featuring local craft beers.",
+        "image": "images/gallery1.jpg"
+    },
+    {
+        "name": "Sports Complex",
+        "address": "505 Stadium Ave",
+        "description": "Facilities for soccer, basketball, and community events.",
+        "image": "images/gallery4.jpg"
+    }
+]

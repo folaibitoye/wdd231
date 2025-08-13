@@ -1,0 +1,4 @@
+/* medium.css (641px - 1024px) */
+.cards {
+    grid-template-columns: repeat(2, 1fr);
+}
