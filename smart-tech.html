@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Smart Vehicle Technology – AutoSmart Hub</title>
+    <link rel="stylesheet" href="styles/site.css">
+    <script defer src="scripts/main-auto.js"></script>
+</head>
+
+<body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header>
+        <h1>Smart Vehicle Technology</h1>
+        <button id="navToggle" aria-label="Toggle navigation">☰</button>
+        <nav id="siteNav" aria-label="Primary">
+            <ul>
+                <li><a href="main-auto.html">Home</a></li>
+                <li><a href="smart-tech.html" aria-current="page">Smart Tech</a></li>
+                <li><a href="maintenance.html">Maintenance</a></li>
+                <li><a href="citations.html">Citations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <h2>Featured Innovations</h2>
+        <div id="cardGrid" class="cards"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> AutoSmart Hub •
+            <span data-submissions>0</span> forms submitted
+        </p>
+    </footer>
+
+    <script defer src="scripts/tech-cards.js"></script>
+</body>
+
+</html>

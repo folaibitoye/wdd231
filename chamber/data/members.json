@@ -1,18 +1,58 @@
 [
     {
-        "name": "SaharaTech",
-        "membership": "gold",
-        "logo": "images/logo1.png",
-        "phone": "123-456-7890",
-        "address": "123 Camel Rd, Timbuktu",
-        "website": "https://saharatech.com"
+        "name": "IDWEB",
+        "address": "2115 S Vista Avenue Boise ID 83705",
+        "phone": "(208) 342-9386",
+        "website": "https://idahowebsites.com",
+        "image": "idweb.png",
+        "membership": 3
     },
     {
-        "name": "Desert Foods",
-        "membership": "silver",
-        "logo": "images/logo2.png",
-        "phone": "456-789-0123",
-        "address": "456 Oasis Ln, Timbuktu",
-        "website": "https://desertfoods.com"
+        "name": "Surge Web Design",
+        "address": "4072 E Arch Drive Meridian ID 83646",
+        "phone": "(208) 631-0640",
+        "website": "https://surgewebdesign.com",
+        "image": "surgeweb.png",
+        "membership": 2
+    },
+    {
+        "name": "GraphicZen",
+        "address": "1788 E Summerplace Court Meridian ID 83646",
+        "phone": "(208) 631-4984",
+        "website": "https://graphiczen.com",
+        "image": "graphiczen.png",
+        "membership": 1
+    },
+    {
+        "name": "PepperShock Media",
+        "address": "1215 3rd Street Nampa ID 83651",
+        "phone": "(208) 461-5070",
+        "website": "https://peppershock.com",
+        "image": "peppershock.png",
+        "membership": 2
+    },
+    {
+        "name": "Flash Tech Services",
+        "address": "Star Idaho 83669",
+        "phone": "(208) 488-5810",
+        "website": "https://flashtechnicalservices.com",
+        "image": "flashtech.png",
+        "membership": 1
+    },
+    {
+        "name": "Metro Express Carwash",
+        "address": "1725 E Overland Road Meridian ID 83642",
+        "phone": "(208) 888-4073",
+        "website": "https://metroexpresscarwash.com",
+        "image": "metroexpress.png",
+        "membership": 3
+    },
+    {
+        "name": "Roaring Retail",
+        "address": "320 Commerce Ave, Cityville",
+        "phone": "(208) 555-0130",
+        "website": "https://roaringretail.example",
+        "image": "roaringretail.png",
+        "membership": 2
     }
 ]

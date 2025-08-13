@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Maintenance Scheduler – AutoSmart Hub</title>
+    <link rel="stylesheet" href="styles/site.css">
+    <script defer src="scripts/main-auto.js"></script>
+</head>
+
+<body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header>
+        <h1>Schedule Maintenance</h1>
+        <button id="navToggle" aria-label="Toggle navigation">☰</button>
+        <nav id="siteNav" aria-label="Primary">
+            <ul>
+                <li><a href="main-auto.html">Home</a></li>
+                <li><a href="smart-tech.html">Smart Tech</a></li>
+                <li><a href="maintenance.html" aria-current="page">Maintenance</a></li>
+                <li><a href="citations.html">Citations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <form id="serviceForm" action="maintenance.html" method="get">
+            <fieldset>
+                <legend>Request Service</legend>
+
+                <label for="vehicle">Vehicle Model <span aria-hidden="true">*</span></label>
+                <select>
+                    <option value="" disabled selected>Select a vehicle…</option>
+                    <option value="evx-24">EV‑X 2024</option>
+                    <option value="roadster-25">Roadster GT 2025</option>
+                    <option value="suvprime">SUV Prime</option>         
+                </select>
+
+                <label for="service">Preferred Service</label>
+                <input id="service" name="service" list="serviceList" placeholder="Tire Rotation">
+                <datalist id="serviceList">
+                    <option value="Battery Check">
+                    <option value="Full Diagnostics">
+                    <option value="Brake Inspection">
+                </datalist>
+
+                <label for="date">Desired Date <span aria-hidden="true">*</span></label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="notes">Extra Notes</label>
+                <textarea id="notes" name="notes" rows="4" placeholder="Describe any issues…"></textarea>
+
+                <button type="submit" class="btn">Book Now</button>
+            </fieldset>
+        </form>
+        <form id="serviceForm" action="thankyou.html" method="get">
+            </form>
+        <p class="thanks hidden" id="thanksMsg">
+            Thanks! Your request was submitted. You’ve booked
+            <strong id="countOut">0</strong> time(s) on this device.
+        </p>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> AutoSmart Hub •
+            <span data-submissions>0</span> forms submitted
+        </p>
+    </footer>
+
+    <script defer src="scripts/form-auto.js"></script>
+</body>
+
+</html>
