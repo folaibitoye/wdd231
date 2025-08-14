@@ -1,0 +1,55 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    /* Light background */
+    color: #333;
+    /* Body text color */
+    margin: 20px;
+}
+
+/* Headings */
+h1,
+h2 {
+    color: #005f73;
+    /* Primary heading color */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Paragraphs and List Items */
+p,
+li {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+}
+
+/* Color Swatches */
+.color-swatch {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border: 1px solid #333;
+    vertical-align: middle;
+}
+
+.heading-color {
+    background-color: #005f73;
+}
+
+.background-color {
+    background-color: #e0fbfc;
+}
+
+.accent-color {
+    background-color: #ee6c4d;
+}
+
+/* Wireframe Boxes */
+.wireframe {
+    border: 1px solid #333;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #e0fbfc;
+    /* Accent background for wireframes */
+}
